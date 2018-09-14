@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="enter_city_hint">Weka Mji</string>
+    <string name="label_current_city">Mji Wako</string>
+    <string name="label_choose_city">Chagua Mji</string>
+    <string name="alertDialog_gps_message">Mfumo wa kujua ulipo haujaruhusiwa. Ungependa kuuruhusu?</string>
+    <string name="alertDialog_gps_positiveButton">Mipangilio</string>
+    <string name="alertDialog_gps_negativeButton">Katisha</string>
+    <string name="progressDialog_gps_locate">Gundua ulipo</string>
+    <string name="load_progress">Tafuta.…</string>
+
+    <string name="title_activity_search">Tafuta eneo</string>
+    <string name="label_activity_main">Hali ya hewa ya sasa</string>
+    <string name="label_activity_weather_forecast">Utabili wa kila siku</string>
+    <string name="label_activity_graphs">Ramani za hali ya hewa</string>
+    <string name="title_activity_license">"Leseni kwa ajili ya  %s"</string>
+
+    <string name="toolbar_menu_refresh">Sasisha</string>
+    <string name="toolbar_menu_search_city">Tafuta Mji</string>
+    <string name="toolbar_menu_detect_location">Gundua ulipo</string>
+    <string name="menu_action_toggle_values">Badili namba</string>
+    <string name="menu_action_toggle_yaxis">Badili Mhilimili Y</string>
+
+    <string name="nav_menu_current_weather">Hali ya hewa ya sasa</string>
+    <string name="nav_menu_daily_forecast">Utabili wa kila siku</string>
+    <string name="nav_menu_graphs">Majedwali</string>
+    <string name="nav_menu_settings">Mipangilio</string>
+    <string name="nav_feedback">Maoni</string>
+    <string name="nav_menu_bitcoin_donation">Changia kwa Bitcoin</string>
+
+    <string name="connection_not_found">Angalia muunganisho wako wa mtandao</string>
+    <string name="toast_parse_error">Tatizo limetokea. Jaribu baadae!</string>
+
+    <string name="pressure_measurement">hPa</string>
+    <string name="wind_speed_meters">m/s</string>
+    <string name="wind_speed_miles">mph</string>
+    <string name="millimetre_label">mm</string>
+
+    <string name="hint_activity_search">Tafuta eneo</string>
+
+    <string name="title_activity_settings">Mipangilio</string>
+    <string name="pref_title_temperature">Joto</string>
+    <string name="preference_hide_desc">Ficha maelezo ya hali ya hewa</string>
+    <string name="pref_title_category_notification">Matangazo</string>
+    <string name="pref_title_notification">Emeza amatangazo</string>
+    <string name="pref_title_notification_refresh_interval">ibishya mu gihe</string>
+    <string name="update_period_15min">Iminota 15</string>
+    <string name="update_period_30min">iminota 30</string>
+    <string name="update_period_1hour">Buri saha</string>
+    <string name="update_period_3hours">amasaha 3</string>
+    <string name="update_period_6hours">amasaha 6</string>
+    <string name="update_period_12hours">amasaha 12</string>
+    <string name="update_period_24hours">amasaha 24</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="preference_widget_title_update_period">Update Period</string>
+    <string name="preference_title_activity_general">Gushiyara k\'umurongo bisazwe</string>
+    <string name="preference_title_activity_widget">gushyira k\'umurong widget</string>
+    <string name="preference_widget_update_location">Ahantu hashya</string>
+    <string name="preference_widget_use_geocoder">Koresha geolocation mu kugaragaza</string>
+    <string name="preference_widget_theme_title">Kurimbisha widget</string>
+    <string name="theme_dark">Umukara</string>
+    <string name="theme_light">Icyeye</string>
+    <string name="theme_transparent">Ibengerana</string>
+    <string name="preference_title_category_display">Garagaza</string>
+    <string name="pref_title_language">Ururimi</string>
+    <string name="pref_language_default">System Default</string>
+    <string name="pref_title_theme">Kurimbisha</string>
+    
+    <string name="preference_title_activity_about">Abo turibo</string>
+    <string name="about_version_pref_title">Verrisiyo</string>
+    <string name="about_source_code_pref_title">Source code</string>
+    <string name="about_app_license_pref_title">License</string>
+    <string name="about_open_source_licenses_pref_title">Ibiranga</string>
+
+    <string name="wind_label">umuyaga: %1$s %2$s</string>
+    <string name="rain_label">imvura: %1$s %2$s</string>
+    <string name="snow_label">Ibicu: %1$s %2$s</string>
+    <string name="humidity_label">ubuhehere: %1$s%2$s</string>
+    <string name="pressure_label">ubutsikamire: %1$s %2$s</string>
+    <string name="cloudiness_label">Ibicu: %1$s%2$s</string>
+    <string name="last_update_label">Ibishya biheruka: %s</string>
+    <string name="sunrise_label">kurasa kw\'Izuba: %s</string>
+    <string name="sunset_label">Izuba: %s</string>
+    <string name="temperature_morning_title">igitongo</string>
+    <string name="temperature_day_title">umunsi</string>
+    <string name="temperature_evening_title">Ikigoroba</string>
+    <string name="temperature_night_title">ijoro</string>
+    <string name="label_temperature">ubushyuhe</string>
+    <string name="label_wind">umuyaga</string>
+    <string name="label_rain">imvura</string>
+    <string name="label_snow">urubura</string>
+
+    <string name="widget_weather_icon_description">Current weather icon</string>
+    <string name="widget_refresh_button">Widget refresh button</string>
+
+    <string name="donation_bitcoin_qr_description">Donation Bitcoin QR code</string>
+    <string name="donation_bitcoin_copy_button">Copy Bitcoin Address</string>
+    <string name="donation_bitcoin_open_app">Open Bitcoin App</string>
+    <string name="donation_bitcoin_copy_message">Bitcoin address was copied to the clipboard</string>
+
+    <string name="wind_direction_north">N</string>
+    <string name="wind_direction_north_east">NE</string>
+    <string name="wind_direction_east">E</string>
+    <string name="wind_direction_south_east">SE</string>
+    <string name="wind_direction_south">S</string>
+    <string name="wind_direction_south_west">SW</string>
+    <string name="wind_direction_west">W</string>
+    <string name="wind_direction_north_west">NW</string>
+
+    <string name="permission_location_rationale">uburenganzi bwaho uri burakenewe</string>
+    <string name="permission_not_granted">uburengazira ntibwejwe</string>
+    <string name="permission_available_location">uburengazira bwemejwe</string>
+    <string name="permission_location_need">ukobwa kwemeza aho uri</string>
+
+    <string name="restart_dialog_message">tangiza programu mukweza ibyo ukoze</string>
+</resources>
