@@ -71,7 +71,7 @@ public class LessWidgetProvider extends AppWidgetProvider {
 
         for (int appWidgetId : appWidgetIds) {
             RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
-                                                      R.layout.widget_less_3x1);
+                                                      R.layout.widget_less_5x1);
 
             setWidgetTheme(context, remoteViews);
             preLoadWeather(context, remoteViews);

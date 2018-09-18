@@ -63,7 +63,7 @@ public class LessWidgetService extends IntentService {
         int[] widgetIds = widgetManager.getAppWidgetIds(widgetComponent);
         for (int appWidgetId : widgetIds) {
             RemoteViews remoteViews = new RemoteViews(this.getPackageName(),
-                                                      R.layout.widget_less_3x1);
+                                                      R.layout.widget_less_5x1);
 
             String iconId = weather.currentWeather.getIdIcon();
             String weatherIcon = Utils.getStrIcon(this, iconId);
