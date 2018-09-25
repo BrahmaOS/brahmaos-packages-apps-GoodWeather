@@ -60,6 +60,16 @@ public class LessWidgetProvider extends AppWidgetProvider {
                     widgetProviderAlarm.setAlarm();
                 }
                 break;
+            /*
+               To load the widget as soon as possible after reboot, receiving
+               LOCKED_BOOT_COMPLETED also update the widget
+            */
+            case Intent.ACTION_LOCKED_BOOT_COMPLETED:
+                AppWidgetManager appWidgetManager2 = AppWidgetManager.getInstance(context);
+                ComponentName componentName2 = new ComponentName(context, LessWidgetProvider.class);
+                int[] appWidgetIds2 = appWidgetManager2.getAppWidgetIds(componentName2);
+                onUpdate(context, appWidgetManager2, appWidgetIds2);
+                break;
             default:
                 super.onReceive(context, intent);
         }
@@ -72,10 +82,8 @@ public class LessWidgetProvider extends AppWidgetProvider {
         for (int appWidgetId : appWidgetIds) {
             RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
                                                       R.layout.widget_less_5x1);
-
             setWidgetTheme(context, remoteViews);
             preLoadWeather(context, remoteViews);
-
             Intent intent = new Intent(context, LessWidgetProvider.class);
             intent.setAction(Constants.ACTION_FORCED_APPWIDGET_UPDATE);
             PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
@@ -88,7 +96,6 @@ public class LessWidgetProvider extends AppWidgetProvider {
 
             appWidgetManager.updateAppWidget(appWidgetId, remoteViews);
         }
-
         context.startService(new Intent(context, LessWidgetService.class));
     }
 
