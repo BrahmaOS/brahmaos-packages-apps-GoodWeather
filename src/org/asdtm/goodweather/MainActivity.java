@@ -471,6 +471,18 @@ public class MainActivity extends BaseActivity implements AppBarLayout.OnOffsetC
         mSwipeRefresh.setEnabled(verticalOffset == 0);
     }
 
+    private void showInfo(String info){
+        Log.i("winton", info);
+    }
+
+    private void showProvider(List<String> list){
+        showInfo("show providers : ");
+        for (int i = 0 ; i < list.size(); i++) {
+            showInfo("(" +i +")" + list.get(i));
+        }
+    }
+
+
     FloatingActionButton.OnClickListener fabListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -511,11 +523,16 @@ public class MainActivity extends BaseActivity implements AppBarLayout.OnOffsetC
         }
     };
 
+
     private void detectLocation() {
+        List<String> providerlist = locationManager.getAllProviders();
+        showProvider(providerlist);
+
         boolean isGPSEnabled = locationManager.getAllProviders().contains(LocationManager.GPS_PROVIDER)
                 && locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         boolean isNetworkEnabled = locationManager.getAllProviders().contains(LocationManager.NETWORK_PROVIDER)
                 && locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+        Log.i("winton","GPSEnabledd: " + isGPSEnabled + "NetworkEnabled: " + isNetworkEnabled);
 
         mProgressDialog = new ProgressDialog(MainActivity.this);
         mProgressDialog.setMessage(getString(R.string.progressDialog_gps_locate));

@@ -83,59 +83,59 @@ public class AppPreference {
                 Constants.KEY_PREF_WIDGET_UPDATE_LOCATION, false);
     }
     
-    public static String getTheme(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context).getString(
-                Constants.KEY_PREF_WIDGET_THEME, "dark");
-    }
+//    public static String getTheme(Context context) {
+//        return PreferenceManager.   (context).getString(
+//                Constants.KEY_PREF_WIDGET_THEME, "dark");
+//    }
 
     public static int getTextColor(Context context) {
-        String theme = getTheme(context);
-        if (null == theme) {
-            return ContextCompat.getColor(context, R.color.widget_transparentTheme_textColorPrimary);
-        } else switch (theme) {
-            case "dark":
+//        String theme = getTheme(context);
+//        if (null == theme) {
+//            return ContextCompat.getColor(context, R.color.widget_transparentTheme_textColorPrimary);
+//        } else switch (theme) {
+//            case "dark":
                 return ContextCompat.getColor(context, R.color.widget_darkTheme_textColorPrimary);
-            case "light":
-                return ContextCompat.getColor(context, R.color.widget_lightTheme_textColorPrimary);
-            default:
-                return ContextCompat.getColor(context, R.color.widget_transparentTheme_textColorPrimary);
-        }
+//            case "light":
+//                return ContextCompat.getColor(context, R.color.widget_lightTheme_textColorPrimary);
+//            default:
+//                return ContextCompat.getColor(context, R.color.widget_transparentTheme_textColorPrimary);
+//        }
     }
     
     public static int getBackgroundColor(Context context) {
-        String theme = getTheme(context);
-        if (null == theme) {
-            return ContextCompat.getColor(context,
-                    R.color.widget_transparentTheme_colorBackground);
-        } else switch (theme) {
-            case "dark":
+//        String theme = getTheme(context);
+//        if (null == theme) {
+//            return ContextCompat.getColor(context,
+//                    R.color.widget_transparentTheme_colorBackground);
+//        } else switch (theme) {
+//            case "dark":
                 return ContextCompat.getColor(context,
                         R.color.widget_darkTheme_colorBackground);
-            case "light":
-                return ContextCompat.getColor(context,
-                        R.color.widget_lightTheme_colorBackground);
-            default:
-                return ContextCompat.getColor(context,
-                        R.color.widget_transparentTheme_colorBackground);
-        }
+//            case "light":
+//                return ContextCompat.getColor(context,
+//                        R.color.widget_lightTheme_colorBackground);
+//            default:
+//                return ContextCompat.getColor(context,
+//                        R.color.widget_transparentTheme_colorBackground);
+//        }
     }
     
     public static int getWindowHeaderBackgroundColorId(Context context) {
-        String theme = getTheme(context);
-        if (null == theme) {
-            return ContextCompat.getColor(context,
-                    R.color.widget_transparentTheme_window_colorBackground);
-        } else switch (theme) {
-            case "dark":
+//        String theme = getTheme(context);
+//        if (null == theme) {
+//            return ContextCompat.getColor(context,
+//                    R.color.widget_transparentTheme_window_colorBackground);
+//        } else switch (theme) {
+//            case "dark":
                 return ContextCompat.getColor(context,
                         R.color.widget_darkTheme_window_colorBackground);
-            case "light":
-                return ContextCompat.getColor(context,
-                        R.color.widget_lightTheme_window_colorBackground);
-            default:
-                return ContextCompat.getColor(context,
-                        R.color.widget_transparentTheme_window_colorBackground);
-        }
+//            case "light":
+//                return ContextCompat.getColor(context,
+//                        R.color.widget_lightTheme_window_colorBackground);
+//            default:
+//                return ContextCompat.getColor(context,
+//                        R.color.widget_transparentTheme_window_colorBackground);
+//        }
     }
     
     public static long saveLastUpdateTimeMillis(Context context) {

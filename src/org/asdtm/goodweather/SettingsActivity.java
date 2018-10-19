@@ -231,10 +231,10 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         @Override
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
             switch (key) {
-                case Constants.KEY_PREF_WIDGET_THEME:
-                    Intent intent = new Intent(Constants.ACTION_APPWIDGET_THEME_CHANGED);
-                    getActivity().sendBroadcast(intent);
-                    break;
+//                case Constants.KEY_PREF_WIDGET_THEME:
+//                    Intent intent = new Intent(Constants.ACTION_APPWIDGET_THEME_CHANGED);
+//                    getActivity().sendBroadcast(intent);
+//                    break;
                 case Constants.KEY_PREF_WIDGET_UPDATE_PERIOD:
                     Intent intent1 = new Intent(Constants.ACTION_APPWIDGET_UPDATE_PERIOD_CHANGED);
                     getActivity().sendBroadcast(intent1);
